@@ -45,4 +45,4 @@ informasi:
 
 Teman-teman bisa belajar lebih lanjut tentang inheritance [di sini](https://www.youtube.com/watch?v=G6fmTwxx8rw&list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0&index=12), super method [di sini](https://www.youtube.com/watch?v=pjHk9CrB1JE&list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0&index=13), dan override [di sini](https://www.youtube.com/watch?v=sYKhxqcDu3w&list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0&index=14)
 
-[Materi Selanjutnya](../18_akses_modifikasi/public)
+[Materi Selanjutnya](../18_akses_modifikasi/01_public)
