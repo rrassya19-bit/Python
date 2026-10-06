@@ -1,5 +1,5 @@
 # Basic object oriented programming
-Mulai Dari Sini: [Definisi Kelas](basic_oop/0_definisi_kelas)
+Mulai Dari Sini: [Definisi Kelas](basic_oop/00_definisi_kelas)
 
 Bahasa pemograman muncul terus menerus, dan begitu pula metodologi yang berbeda. Pemograman berorientasi objek adalah salah satu metodologi yang telah menjadi sangat populer selamat beberapa tahun terakhir.
 
@@ -39,4 +39,4 @@ Inti dari pemograman python adalah objek dan OOP. Namun kita tidak perlu membata
 
 Teman-teman bisa belajar lebih lanjut tentang dasar-dasar Object Oriented Programming [di sini](https://www.youtube.com/watch?v=1PjHsUnOkes&list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0&index=1)
 
-Topik Selanjutnya: [Definisi kelas](https://github.com/bellshade/Python/blob/main/object_oriented_programming/basic_oop/00_definisi_kelas/README.md)
+Topik Selanjutnya: [Definisi kelas](basic_oop/00_definisi_kelas)

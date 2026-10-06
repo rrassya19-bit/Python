@@ -6,10 +6,10 @@
 
 > | Nama Materi | Link | Status |
 > | --- | --- | --- |
-> | *Factory Pattern* | [Lihat Materi](pycode/magic_methods) | Completed |
-> | *Proxy Pattern* | [Lihat Materi](pycode/decorators) | Completed |
-> | *Singleton Pattern* | [Lihat Materi](pycode/generators) | Completed |
-> | *Composite Pattern* | [Lihat Materi](pycode/generators) | Coming Soon |
+> | *Factory Pattern* | [Lihat Materi](docs/factory.md) | Completed |
+> | *Proxy Pattern* | [Lihat Materi](docs/proxy.md) | Completed |
+> | *Singleton Pattern* | [Lihat Materi](docs/singleton.md) | Completed |
+> | *Composite Pattern* | [Lihat Materi](docs/composite.md) | Completed |
 > | *Facade Pattern* | [Lihat Materi](pycode/argument) | Coming Soon |
 > | *Observer Pattern* | [Lihat Materi](pycode/type_hint) | Coming Soon |
 > | *Builder Pattern* | [Lihat Materi](pycode/metaclass) | Coming Soon |

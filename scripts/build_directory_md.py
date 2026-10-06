@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+import os
+from typing import Iterator
+
+URL_BASE = "https://github.com/bellshade/Python/blob/main"
+
+
+def good_file_paths(top_dir: str = ".") -> Iterator[str]:
+    """
+    Fungsi menghasilkan path file yang memenuhi kriteria tertentu
+    dari direktori yang diberikan.
+
+    Parameter:
+        - top_dir (str): direktori root tempat pencarian dimulai.
+                            Default adalah direktori saat ini (".").
+
+    Return:
+        - (Iterator[str]): path file (relatif terhadap `top_dir`)
+
+    """
+    for dir_path, dir_names, filenames in os.walk(top_dir):
+        dir_names[:] = [d for d in dir_names if d != "scripts" and d[0] not in "._"]
+        for filename in filenames:
+            if filename == "__init__.py":
+                continue
+            if os.path.splitext(filename)[1] in (".py", ".ipynb"):
+                yield os.path.join(dir_path, filename).lstrip("./")
+
+
+def md_prefix(i: int) -> str:
+    return f"{i * '  '}*" if i else "\n##"
+
+
+def print_path(old_path: str, new_path: str) -> str:
+    old_parts = old_path.split(os.sep)
+    for i, new_part in enumerate(new_path.split(os.sep)):
+        if i + 1 > len(old_parts) or old_parts[i] != new_part:
+            if new_part:
+                print(f"{md_prefix(i)} {new_part.replace('_', ' ').title()}")
+    return new_path
+
+
+def print_directory_md(top_dir: str = ".") -> None:
+    old_path = ""
+    for filepath in sorted(good_file_paths(top_dir)):
+        filepath, filename = os.path.split(filepath)
+        if filepath != old_path:
+            old_path = print_path(old_path, filepath)
+        indent = (filepath.count(os.sep) + 1) if filepath else 0
+        norm_filepath = filepath.replace(os.sep, "/").lstrip("/")
+        url_parts = [URL_BASE]
+        if norm_filepath:
+            url_parts.append(norm_filepath)
+        url_parts.append(filename)
+        url = "/".join(url_parts).replace(" ", "%20")
+        filename = os.path.splitext(filename.replace("_", " ").title())[0]
+        print(f"{md_prefix(indent)} [{filename}]({url})")
+
+
+if __name__ == "__main__":
+    print_directory_md(".")

@@ -1,4 +1,4 @@
 ## Math
 
 
-Topik Selanjutnya: [Object Oriented Programming](../object_oriented_programming)
+Topik Selanjutnya: [Object Oriented Programming](../object_oriented)
